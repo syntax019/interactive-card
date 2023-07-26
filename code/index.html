@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div class="container-item1">
+            <!-- <h2>fkgkkfjjddddd</h2>df -->
+            <div class="card-front">
+                <div class="div-circle">
+                    <div class="card-front-circle1"></div>
+                    <div class="card-front-circle2"></div>
+                </div>
+
+                <div class="div-detail">
+                    <p class="card-number js-card-number">0000 0000 0000 0000</p>
+                    <div class="details">
+                        <p class="details-name js-details-name">JANE APPLESEED</p>
+                        <p class="details-number">
+                            <span class="js-details-number">09</span>/<span class="js-details-number2">00
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <p class="cvc-number js-cvc-number">000</p>
+            </div>
+        </div>
+        <div class="container-item2">
+            <form action="">
+                <div class="card-name">
+                    <label class="card-name-logo">CARDHOLDER NAME</label>
+                    <input class="card-name-text js-card-name-text" type="text" 
+                      placeholder="e.g. Jane Appleseed" id="">
+                      <p class="format js-name-format"></p>
+                </div>
+
+
+                <div class="card-name2">
+                    <label class="card-name-logo">CARD NUMBER</label>
+                    <input class="card-name-text js-card-number-text" type="text"
+                    placeholder="e.g. 1234 5678 9123 000" maxlength="19">
+                    <p class="format js-format"></p>
+                </div>
+
+                <div class="exp-date-cvc">
+                    <div class="div-exp">
+                        <label class="exp-date">EXP. DATE (MM/YY)</label>
+                        <input type="text" class="js-exp-month" 
+                          placeholder="MM" maxlength="2">
+                        <input type="text" class="js-exp-year" min="2" 
+                        placeholder="YY" maxlength="2">
+                        <p class="format month-format"></p>
+                        <p class="format year-format"></p>
+                    </div>
+                    <div class="cvc">
+                        <label class="exp-date">CVC</label>
+                        <input class="cvc-input js-cvc-input" type="text"
+                          placeholder="e.g. 123" maxlength="3">
+                          <p class="format cvc-format"></p>
+                    </div>
+                </div>
+                <button class="btn">Confirm</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
